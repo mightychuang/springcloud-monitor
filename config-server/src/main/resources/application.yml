@@ -1,0 +1,13 @@
+server:
+  port: 7001
+# 对称加密Key
+encrypt:
+  key: enkey
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: test
+  jackson.serialization.indent_output: true
+endpoints:
+  sensitive: false

@@ -1,0 +1,22 @@
+server:
+  port: 7001
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: test
+  jackson.serialization.indent_output: true
+endpoints:
+  sensitive: true
+## 刷新时，开启安全验证
+management:
+  security:
+    enabled: true
+# 设置安全验证
+security:
+  user:
+    name: user
+    password: password
+  basic:
+    enabled: false
+
